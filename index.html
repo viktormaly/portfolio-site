@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion Dance by Zoia</title>
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+<script src="https://cdn.tailwindcss.com"></script>
+
 <body class=" bg-red
  text-lg">
 
@@ -75,11 +76,18 @@
         <!-- Gallery Section -->
         <section class="mt-12">
             <h2 class="text-3xl font-bold text-gray-800">Gallery</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                <img src="./img/fire-show.jpeg" class="w-full rounded-lg shadow-md">
-                <img src="./img/fire-show2.jpeg" class="w-full rounded-lg shadow-md">
-                <img src="./img/portrait.jpeg" class="w-full rounded-lg shadow-md">
-                <img src="./img/silves-show.jpeg" class="w-full rounded-lg shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-6">
+                <!-- Top-left image: rounded only on top-left corner -->
+                <img src="./img/fire-show.jpeg" class="w-full h-[400px] object-cover rounded-tl-lg shadow-md">
+        
+                <!-- Top-right image: rounded only on top-right corner -->
+                <img src="./img/fire-show2.jpeg" class="w-full h-[400px] object-cover rounded-tr-lg shadow-md">
+        
+                <!-- Bottom-left image: rounded only on bottom-left corner -->
+                <img src="./img/portrait.jpeg" class="w-full h-[400px] object-cover rounded-bl-lg shadow-md">
+        
+                <!-- Bottom-right image: rounded only on bottom-right corner -->
+                <img src="./img/silves-show.jpeg" class="w-full h-[400px] object-cover rounded-br-lg shadow-md">
             </div>
         </section>
 
